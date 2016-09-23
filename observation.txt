@@ -1,0 +1,9 @@
+make
+make -C /lib64/modules/4.4.20-1-MANJARO/build M=/home/ayush/code/DD/myTest modules
+ make[1]: Entering directory '/usr/lib/modules/4.4.20-1-MANJARO/build'
+ make[1]: *** No rule to make target 'modules'.  Stop.
+ make[1]: Leaving directory '/usr/lib/modules/4.4.20-1-MANJARO/build'
+ make: *** [Makefile:8: default] Error 2
+
+
+ Solved this by installing sudo pacman -S linux44-headers
