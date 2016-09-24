@@ -1,0 +1,4 @@
+owner field is necessary in order to setup a counter of links to the module. 
+The link counter is necessary so that the module wouldn’t be unloaded too soon.
+For example, if the file system has been assembled, the module loading can lead to the crash.
+The link counter won’t allow to unload the module till its being used, i.e. until we disassembly the file system.
